@@ -610,6 +610,7 @@ p {
   fill: var(--cloud);
 }
 .footer-form-container {
+  width: 100%;
 }
 .footer-form-text {
   margin-bottom: 16px;
@@ -627,10 +628,9 @@ p {
 }
 
 .footer-form-label {
-  width: 100%;
 }
 .footer-form-input {
-  min-width: 398px;
+  max-width: 398px;
   width: 100%;
   height: 40px;
   border: 1px solid var(--white);
