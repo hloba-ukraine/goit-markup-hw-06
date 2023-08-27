@@ -563,11 +563,13 @@ p {
   margin-bottom: 16px;
   text-decoration: none;
 }
+
 .footer-text {
   max-width: 264px;
   font-weight: 400;
   color: var(--cloud);
 }
+
 .social-footer-text {
   color: var(--white);
   font-weight: 500;
@@ -596,6 +598,7 @@ p {
     column-gap: 24px;
   }
   .tablet {
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 @media screen and (min-width: 1158px) {
