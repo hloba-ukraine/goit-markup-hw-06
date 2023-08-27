@@ -570,18 +570,14 @@ p {
   margin-bottom: 16px;
   text-align: center;
 }
+
 .footer-content {
   display: flex;
+  flex-direction: column;
+  gap: 72px;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
-    margin: 0 auto;
-  }
-}
+
 .footer-item {
   text-align: center;
 }
