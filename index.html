@@ -26,7 +26,7 @@
   </head>
   <body>
     <!--Had page-->
-    <!-- <header class="header-border">
+    <header class="header-border">
       <div class="container header-main">
         <nav class="header-nav">
           <a href="./index.html" class="logo list logo-header"
@@ -62,8 +62,27 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="32"
+            height="22"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <!--Main content for page-->
     <main>
       <section class="main-section">
@@ -160,7 +179,7 @@
         </div>
       </section>
       <section id="our-team" class="cloud-background sec-padding">
-        <div class="container section-ourteam">
+        <div class="container section-ourteam tablet-section">
           <h2 class="header-medium title-ourteam">Our Team</h2>
           <ul class="list list-ourteam">
             <li class="card-team item-our-team">
@@ -339,7 +358,7 @@
         </div>
       </section>
       <section class="section-customers">
-        <div class="container">
+        <div class="container tablet-section">
           <h2 class="header-medium title-customers">Customers</h2>
           <ul class="list section-customers-list">
             <li class="section-customers-item">
@@ -390,7 +409,7 @@
     </main>
     <!--footer page-->
     <footer class="footer-background footer-section">
-      <div class="container footer-content">
+      <div class="container footer-content tablet-section">
         <div class="footer-item tablet">
           <a href="./index.html" class="logo footer-link"
             >Web<span class="logo-three">Studio</span></a
@@ -454,6 +473,21 @@
         </div>
       </div>
     </footer>
+    <!--Mobile-menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle modal-button js-close-menu">
+        <svg width="8" height="8" class="button-close">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
     <!--Modal Form-->
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -540,5 +574,12 @@
       </div>
     </div>
     <script src="./js/modal.js"></script> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

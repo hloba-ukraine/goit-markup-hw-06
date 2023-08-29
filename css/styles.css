@@ -165,31 +165,112 @@ p {
 }
 .header-main {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
+
 .header-nav {
   display: flex;
   align-items: center;
-  margin-right: 332px;
+  /* margin-right: 332px; */
+  margin-right: auto;
   padding-top: 24px;
   padding-bottom: 24px;
 }
+@media screen and (max-width: 767.98px) {
+  .header-nav {
+    padding-top: 24px;
+    padding-bottom: 22px;
+  }
+}
 .logo-header {
-  margin-right: 76px;
+  /* margin-right: 76px; */
 }
 .list-header {
   display: flex;
   gap: 40px;
+}
+@media screen and (max-width: 767.98px) {
+  .list-header {
+    display: none;
+  }
 }
 
 .adress-list {
   display: flex;
   gap: 40px;
 }
+@media screen and (max-width: 767.98px) {
+  .adress-list {
+    display: none;
+  }
+}
 .header-link {
   padding: 24px 0;
 }
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
 /*Main Studio*/
 /*Hero Section*/
 .button-main {
@@ -599,6 +680,9 @@ p {
   }
   .tablet {
     flex-basis: calc((100% - 24px) / 2);
+  }
+  .tablet-section {
+    width: 584px;
   }
 }
 @media screen and (min-width: 1158px) {
