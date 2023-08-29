@@ -149,10 +149,23 @@ p {
   font-size: 16px;
   line-height: 1.5;
 }
+@media screen and (max-width: 1158px) {
+  .adress-style {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 1.17;
+  }
+}
 .adress-style {
   font-style: normal;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+@media screen and (max-width: 768px) {
+  .adress-style {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 .mail-phone {
   color: var(--adress);
@@ -165,17 +178,29 @@ p {
 }
 .header-main {
   display: flex;
-  /* justify-content: center; */
 }
 
 .header-nav {
   display: flex;
   align-items: center;
-  /* margin-right: 332px; */
   margin-right: auto;
   padding-top: 24px;
   padding-bottom: 24px;
 }
+@media screen and (min-width: 768px) {
+  .header-nav {
+    margin-right: 120px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .logo-header {
+    margin-right: 76px;
+  }
+  .header-nav {
+    margin-right: 332px;
+  }
+}
+
 @media screen and (max-width: 767.98px) {
   .header-nav {
     padding-top: 24px;
@@ -183,12 +208,17 @@ p {
   }
 }
 .logo-header {
-  /* margin-right: 76px; */
+}
+@media screen and (max-width: 1158px) {
+  .logo-header {
+    margin-right: 120px;
+  }
 }
 .list-header {
   display: flex;
   gap: 40px;
 }
+
 @media screen and (max-width: 767.98px) {
   .list-header {
     display: none;
@@ -198,6 +228,13 @@ p {
 .adress-list {
   display: flex;
   gap: 40px;
+  align-items: center;
+}
+@media screen and (max-width: 1158px) {
+  .adress-list {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .adress-list {
@@ -399,6 +436,7 @@ p {
   background-position: center;
   background-size: cover;
 }
+
 @media screen and (min-width: 768px) {
   .main-section {
     max-width: 768px;
