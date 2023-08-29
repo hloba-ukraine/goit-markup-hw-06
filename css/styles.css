@@ -319,6 +319,11 @@ p {
   text-transform: capitalize;
   width: max-content;
 }
+@media screen and (max-width: 400px) {
+  .item-number {
+    font-size: 25px;
+  }
+}
 .item-mail {
   line-height: 1.2;
   font-size: 20px;
@@ -329,6 +334,11 @@ p {
 .social-mobile {
   display: flex;
   gap: 56px;
+}
+@media screen and (max-width: 400px) {
+  .social-mobile {
+    gap: 25px;
+  }
 }
 /*Main Studio*/
 /*Hero Section*/
