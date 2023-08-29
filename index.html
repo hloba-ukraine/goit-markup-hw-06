@@ -63,22 +63,12 @@
           </ul>
         </address>
         <button
-          class="menu-toggle js-open-menu"
+          class="menu-toggle-burger js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
-            width="32"
-            height="22"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/burger-menu1.svg#icon-burger-menu"></use>
           </svg>
         </button>
       </div>
@@ -481,11 +471,62 @@
         </svg>
       </button>
 
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
+      <ul class="list mobile-menu">
+        <li>
+          <a href="./index.html" class="link list header-link current-mobile"
+            >Studio</a
+          >
+        </li>
+        <li>
+          <a href="./portfolio.html" class="link list header-link text-mobile"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a href="" class="link list header-link text-mobile">Contacts</a>
+        </li>
+      </ul>
+      <address class="">
+        <ul class="list adress-list-mobile">
+          <li class="list">
+            <a href="mailto:info@devstudio.com" class="link item-mail"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="list item-number">
+            <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
+      <ul class="list social-link-footer social-mobile">
+        <li class="footer-list-item">
+          <a href="" class="link">
+            <svg width="24" height="24" class="section-footer-icon">
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-list-item">
+          <a href="" class="link">
+            <svg width="24" height="24" class="section-footer-icon">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-list-item">
+          <a href="" class="link">
+            <svg width="24" height="24" class="section-footer-icon">
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-list-item">
+          <a href="" class="link">
+            <svg width="24" height="24" class="section-footer-icon">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
       </ul>
     </div>
     <!--Modal Form-->
